@@ -1,0 +1,64 @@
+<form id="contact">
+     <fieldset>
+     <legend>Contact Information</legend> 
+
+        <div class="formRow">
+            <label>First Name</label>	
+                <input name="first name" id="fname" type="text" required/>
+            </div>
+            </br>
+        <div class="formRow">
+            <label>Last Name</label>	
+                <input name="last name" id="lname" type="text" required/>
+            </div>
+            </br>
+        <div class="formRow">
+            <label>Email</label>	
+                <input name="email" id="mail" type="email" required/>
+            </div>	
+            </br>	
+        <div class="formRow">
+            <label>Phone Number</label>	
+                <input name="phone" id="phone" type="tel" 
+                placeholder="(###) ###-####"required/>
+            </div>		
+            </br>
+     </fieldset>
+
+     <fieldset>
+     <legend>Travel Information:</legend>
+
+        <div class="formRow">
+            <label>Number of Adults Traveling</label>
+            <input name="adults" id="adults" type="number"min="1" max="35">
+            </div>
+            </br>
+        <div class="formRow">
+            <label>Number of Children Traveling</label>
+            <input name="children" id="adults" type="number"min="0" max="35">
+            </div>
+            </br>
+        <div class="formRow">
+            <label>Start Date of Travel</label>
+            <input name="start date" id="start date" type="date" min="2021-03-09" max="2022-12-31">
+            </div>
+        </br>
+        <div class="formRow">
+            <label>Desired Destination</label>	
+                <select name="destination" id="destination" size="4">
+                    <option value="maldives">Maldives, South Asia</option>
+                    <option value="mexico">Cancun, Mexico</option>
+                    <option value="newzealand">New Zealand</option>
+                    <option value="italy">Venice, Italy</option>
+                </select>
+            </div>		
+            </br>   
+            <!--Add Activity Selector Here-->
+     </fieldset>
+        </br>
+        <div id="buttons">
+            <input type="submit" value="Submit" />
+            <input type="reset" value="Clear" />
+            </div> 
+            </br>
+    </form>
