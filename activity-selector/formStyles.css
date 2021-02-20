@@ -1,0 +1,20 @@
+/*Mega Travel Contact Form Stylesheet
+    for Contact Agent Page
+
+    file name: formStyles.css
+
+    Bridget Hudson
+    2/29/21
+*/
+
+#ActivitySelector
+{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 3%;
+}
+
+#actList
+{
+    padding: 5%;
+    font-size: 92%;
+}
