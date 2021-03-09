@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<!-- 
+    ITC 475 Midterm
+    Monitor (Graphics) Page
+    File name: monitor.html 
+    
+    Bridget Hudson
+    3/3/21
+-->
+
+<head>
+    <meta charset="utf-8" />
+    <title>Monitor Home's Smart Devices</title>
+    <link href="midtermStyles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header id="header" >
+        <nav>
+            <ul class="nav">
+                <a style="padding:3%;" href="monitor.html">Monitor</a>
+                <a style="padding:3%;" href="control.html">Controls</a>
+            </ul>
+        </nav>
+        <div id="runBtn"><button id="run" onclick="Run()">RUN</button></div>
+        <div id="clock"></div>
+    </header>
+    <div id="house"><img id="houseImg" src="site_files/house.png" alt="House"></div>
+    <div class="grid" >
+        <div class="devices" id="front"><p>Front Door Status</p></div>
+        <div class="devices" id="back"><p>Back Door Status</p></div>
+        <div class="devices" id="garage"><p>Garage Door Status</p></div>
+        <div class="devices" id="dining"><p>Dining Room Light Status</p></div>
+        <div class="devices" id="living"><p>Living Room Lamp Status</p></div>
+        <div class="devices" id="bed1"><p>1st Bedroom Lamp Status</p></div>
+        <div class="devices" id="bed2"><p>2nd Bedroom Lamp Status</p></div>
+        <div class="devices" id="kitchen"><p>Kitchen Fan Status</p></div>
+        <div class="devices" id="bath"><p>Bathroom Fan Status</p></div>
+        <div class="devices" id="washer"><p>Washer Status</p></div>
+        <div class="devices" id="dryer"><p>Dryer Door Status</p></div>
+    </div>
+    <footer></footer>
+    <script src="midterm.js"></script>
+</body>
+</html>
