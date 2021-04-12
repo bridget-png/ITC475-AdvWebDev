@@ -1,0 +1,157 @@
+/*Mega Travel Contact Form Stylesheet
+    for Contact Agent Page
+
+    file name: formStyles.css
+
+    Bridget Hudson
+    2/29/21
+*/
+
+form
+{
+    width: 95%;
+    margin: auto;
+}
+
+fieldset
+{
+    padding: 2%;
+    margin-bottom: 2%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightgrey;
+    border: solid;
+    border-width: 1%;
+    border-color:#565656;
+}
+
+.formRow
+{
+    padding: 1%;
+}
+
+legend
+{
+    background-color: lightblue;
+    color: #414141;
+    font-size: 115%;
+    font-weight: bolder;
+    padding: 1%;
+    padding-left: 2%;
+    margin-bottom: 10px;
+    width: 90%;
+}
+
+label
+{
+    padding-right: 3%;
+    font-size: 92%;
+}
+
+.formRow input
+{
+    width: 90%;
+    height: 30px;
+    display: block;
+}
+
+#ActivitySelector
+{
+    padding: 1%;
+}
+
+#destination-selector /*drop down list*/
+{
+    width: 65%;
+    height: 30px;
+}
+
+#viewAct /*button*/
+{
+    width: 25%;
+    height: 30px;
+}
+
+#actList
+{
+    padding-top: 1%;
+    font-size: 92%;
+    width: 90%;
+}
+
+#buttons
+{
+    padding-left: 2.8%;
+}
+
+#submit, #clear
+{
+    margin-bottom: 3%;
+    margin-right: 2%;
+    width: 20%;
+    height: 45px;
+    background-color: lightblue;
+}
+
+#validation
+{
+    padding-left: 3.2%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* TABLET & DESKTOP STYLES
+   769px to 1150px
+   ----------------------------*/
+   @media only screen and (min-width: 769px)
+   {
+    form
+    {
+        width: 80%;
+        margin-left: 3%;
+    }
+
+    .formRow input
+    {
+    width: 75%;
+    height: 20px;
+    display: block;
+    }
+
+    legend
+    {
+        padding: 1.5%;
+        width: 75%;
+    }
+
+    #destination-selector /*drop down list*/
+    {
+    width: 55%;
+    height: 20px;
+    }
+
+    #viewAct /*button*/
+    {
+    width: 20%;
+    height: 20px;
+    }
+
+    #actList
+    {
+    padding-top: 1%;
+    font-size: 92%;
+    width: 75%;
+    }
+
+    #submit, #clear
+    {
+    margin-bottom: 3%;
+    margin-left: 0.5%;
+    margin-right: 2%;
+    width: 12%;
+    height: 35px;
+    background-color: lightblue;
+    }
+       /*
+        lower input box widths to 75 - 80%
+        smaller submit and clear buttons 
+       */
+   }
