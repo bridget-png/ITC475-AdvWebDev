@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+    <!-- 
+    Racing Game: Main Page
+    File name: race.html
+
+    Bridget Hudson
+    4/28/21
+--> 
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="race, cars, racecar, game" />
+    <title>Rainbow Racers</title>
+    <link href="raceGame.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <nav style="margin:auto">
+            <ul style="display:table; margin: auto;"> 
+                <a href="race.html">RAINBOW RACERS</a>
+            </ul>        
+        </nav>
+    </header>
+
+    <div style="padding-left: 2%; padding-top: 1%;">
+        <form action="http://localhost/raceGame/viewStats.php" 
+        method="post" id="raceStats">
+        <input type="submit" style="background-color: white; color:#a61919; 
+        padding: 0.5%;" value="RACING STATS"/>
+        </form>
+    </div>
+
+    <form action="http://localhost/raceGame/raceDB.php" method="post" id="playerSelect">
+        <fieldset style="padding: 1%; background-color: rgba(255, 255, 255, 0.3); 
+            border: black; border-width: thick; border-style: double;">
+            <div class="formRow">
+                <label style="font-family: Arial, Helvetica, sans-serif; color: white;
+                    font-weight: bold; margin: 1%;">SELECT RACER 1</label>
+                <select id="r1select" name="racer1select" style="width:50%; height: 35px;">
+                    <option value="blank" selected>-----</option>
+                    <option value="Pink Car">Magenta Motorcar</option>
+                    <option value="Red Car">Racin' Red Roadster</option>
+                    <option value="Orange Car">Orange On-the-Double Oldsmobile</option>
+                    <option value="Yellow Car">Canary Convertible</option>
+                </select>
+                <input type="button" id="confirm1" onclick="setP1()" value="confirm">
+                <br><br>
+                <label style="font-family: Arial, Helvetica, sans-serif; color: white;
+                font-weight: bold; margin: 1%;">SELECT RACER 2</label>
+                <select id="r2select" name="racer2select" style="width:50%; height: 35px;">
+                    <option value="blank" selected>-----</option>
+                    <option value="Green Car">Green Gas-Guzzler</option>
+                    <option value="Blue Car">Souped-Up Sapphire Sedan</option>
+                    <option value="Purple Car">Amethyst Automobile</option>
+                    <option value="Gray Car">Silver Speedwagon</option>
+                </select>
+                <input type="button" id="confirm2" onclick="setP2()" value="confirm">
+            </div>
+        </fieldset>
+        <br><br>
+        <div class="row">
+            <div id="pageTitle">IT'S TIME TO RACE!</div>
+            <a href="race.html"><div id="winnerBox"></div></a>
+            <input type="submit" id="submit" value="SAVE RACE" 
+            style="background-color: white; color:#a61919; 
+            padding: 0.5%; height:40px; margin-top: 1.5%; margin-left:10%;"/>
+        </div>
+    </form>
+
+    <div id="lightContainer"><a href="#" onclick="race()" id="stoplightBtn">
+        <img src="site_files/redLit.png" alt="red light" id="stoplight" /></a></div>
+    
+    <div id="track">
+        <div id="player1slot"></div>
+        <div id="player2slot"></div>
+
+        <img id="start" src="site_files/startLine.png" alt="starting line"/> 
+        <img id="finish" src="site_files/finishLine.png" alt="finish line"/>
+    </div>
+
+    <div id="saveMessage"></div>
+
+    <script src="raceGame.js"></script>
+</body>
+
+</html>
